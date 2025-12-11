@@ -1,0 +1,264 @@
+1. INDEX:
+
+.titel {   /* header */
+    background-color: #ffb6d9;
+    padding: 20px; /* Ruimte binnenin de header */
+    text-align: center; /* Tekst in het midden */
+    font-size: 2rem; /* Grote tekst */
+    font-weight: bold; 
+    color: #ffffff; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;          /* achtergrond kleur*/
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;                 /* kleur tekst in header */
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;      /* tekst in header vet zetten */
+  }
+
+  
+.container {
+    display: flex; /* Zet elementen naast elkaar */
+    flex-direction: row; /* Links en rechts naast elkaar */
+    align-items: flex-start; /* Bovenkanten gelijk */
+    padding: 20px; /* Ruimte rond het geheel */
+  }
+  
+.image-section {  /*afbeelding in midden scherm*/
+    flex: 1; /* Neemt 50% van de breedte */
+  }
+  
+.image-section img {
+    max-width: 100%; /* Afbeelding wordt nooit te breed */
+    border-radius: 10px; /* Zachte afgeronde hoeken */
+  }
+  
+.info-section {   /* tekst in midden scherm */
+    flex: 1; /* Ook 50% van de breedte (andere helf van afbeelding) */
+    background-color: #ffe4f2;
+    color: #ffb6d9;
+    padding: 20px; /* Ruimte binnen het tekstvak */
+    border-radius: 10px; /* Afgeronde hoeken */
+    margin-left: 20px; /* Ruimte tussen tekstvak en foto */
+  }
+ 
+ /* Buttons */
+.btn-shop {
+    position: fixed;
+    bottom: 50px;
+    left: 100px;
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;    /* omhulsel */
+    border-radius: 10px;
+    font-weight: bold;
+    z-index: 10; /* knop blijft boven achtergrond */
+  }
+  
+  /* 2e knop naar rechts */
+.btn-info {
+    left: 250px;
+  }
+  
+  /* Hover effect */
+.btn:hover {
+    background-color: white;
+    color: #ffb6d9;
+  }
+
+  
+a:hover {
+  text-decoration: underline;
+  }
+
+
+
+
+2. SHOP:
+
+.titel {   /* header */
+    background-color: #ffb6d9;
+    padding: 20px; /* Ruimte binnenin de header */
+    text-align: center; /* Tekst in het midden */
+    font-size: 2rem; /* Grote tekst */
+    font-weight: bold; 
+    color: #ffffff; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;          /* achtergrond kleur*/
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    }
+    th, td {
+    background-color: white;
+    color: #ffb6d9;
+    }
+
+
+
+
+3. INFO:
+
+.titel {   /* header */
+    background-color: #ffb6d9;
+    padding: 20px; /* Ruimte binnenin de header */
+    text-align: center; /* Tekst in het midden */
+    font-size: 2rem; /* Grote tekst */
+    font-weight: bold; 
+    color: #ffffff; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: white;          /* achtergrond kleur*/
+    color: #222;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: white;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .info {
+    color: #ffb6d9;
+    font-weight: bold; 
+    padding: 1rem;  /* afstand van de linker kant */
+  }
+
+  .telefoonnummer {
+    color: #ffb6d9;
+    font-weight: bold; 
+    padding: 1rem;
+  }
+  
+  .locatie {
+    color: #ffb6d9;
+    font-weight: bold; 
+    padding: 1rem;
+  }
+
+  .nummer {
+    color: #ffb6d9;
+    font-weight: bold; 
+    padding: 2rem;
+ }
+
+  .adres {
+    color: #ffb6d9;
+    font-weight: bold; 
+    padding: 2rem;
+  }
+
+  .outsideshop {
+    border-radius: 10px; /* Zachte afgeronde hoeken */
+  }
