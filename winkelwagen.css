@@ -1,0 +1,145 @@
+.titel {   /* header */
+  background-color: #ffb6d9; 
+  padding: 20px; /* ruimte binnen de header */
+  text-align: center; 
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+
+* {
+  margin: 0; /* verwijdert standaard buitenruimte van alle elementen */
+  padding: 0; /* verwijdert standaard binnenruimte */
+  box-sizing: border-box; /* zorgt dat padding binnen de breedte valt */
+}
+
+body {
+  background-color: #fff; /* achtergrondkleur wit */
+  color: #fff; /* standaard tekstkleur wit */
+  font-family: Georgia, Italic; /* lettertype */
+  line-height: 1.6; /* ruimte tussen regels */
+}
+
+header {
+  display: flex; /* elementen naast elkaar */
+  justify-content: space-between; /*  ruimte tussen links en rechts */
+  align-items: center; /* verticaal centreren */
+  background-color: #ffb6d9;
+  color: white;
+  padding: 1rem 2rem; /* ruimte in header */
+  flex-wrap: wrap; /* gsm -> ietms onder elkaar */
+}
+
+.logo {
+  display: flex; /* logo + tekst naast elkaar */
+  align-items: center; /* verticaal uitlijnen */
+  gap: 10px; /* ruimte tussen logo + tekst */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul li a img {
+  width: 24px;       /* breedte van icoon */
+  height: 24px; /* hoogte van icoon */
+  object-fit: contain; /* voorkomt vervorming */
+  display: block;
+}
+
+/* Zorg dat alles netjes op één lijn staat */
+nav ul li {
+  display: flex; /* zet items naast elkaar */
+  align-items: center; /* centreren */
+}
+
+nav ul {
+  list-style: none; /* verwijdert bolletjes van lijst */
+  display: flex;
+  gap: 1.5rem; /* ruimte tussen menu items */
+}
+
+nav a {
+  text-decoration: none; /* geen onderlijning */
+  color: white;
+  font-weight: 500;
+}
+
+--------
+
+body{
+  font-family: Arial, sans-serif;
+  background: #0000;
+  padding:40px; /* pagina‑ruimte */
+}
+
+.cart-container{
+  background:white;
+  padding:20px; /* binnenruimte */
+  max-width:700px; /* maximale breedte */
+  margin:auto; /* centreren */
+  border-radius:10px; /* afgeronde hoeken */
+  box-shadow:0 5px 15px rgba(0,0,0,0.1); /* lichte schaduw */
+}
+
+h1{
+  text-align:center; /* titel centreren */
+}
+
+.cart-item{
+  display:flex; /* horizontale layout */
+  color: black;
+  align-items:center; /* verticaal centreren */
+  gap:15px; /* ruimte elementen */
+  padding:15px 0; /* verticale ruimte */
+  border-bottom:1px solid #0000; /* onderlijn item */
+}
+
+.cart-item img{
+  border-radius:8px; /* afgeronde foto */
+  max-width: 100px; /* maximale grootte */
+  width: 100%; /* schaal mee */
+  height: auto; /* verhouding behouden */
+}
+
+.item-info{
+  flex:1; /* neemt ruimte */
+}
+
+input[type="number"]{
+  width:60px; /* invoerveld breedte */
+  padding:5px; /* binnenruimte */
+}
+
+.remove-btn{
+  background:#ff4d4d;
+  border:none; /* geen rand */
+  color: white;
+  font-family: Georgia, Italic;
+  padding:8px 12px; /* knopruimte */
+  border-radius:5px; /* afgeronde knop */
+  cursor:pointer; /* handcursor */
+}
+
+.remove-btn:hover{
+  background:#e60000; /* hover effect */
+}
+
+.cart-total{
+  margin-top:20px; /* ruimte boven */
+  text-align:right; /* tekst rechts */
+}
+
+.checkout-btn{
+  background:#ffb6d9;
+  color:white;
+  font-family: Georgia, Italic;
+  border:none; /* geen rand */
+  padding:10px 18px; /* knopruimte */
+  border-radius:6px; /* afgeronde knop */
+  cursor:pointer; /* handcursor */
+  font-size:16px; /* tekstgrootte */
+}
+
+.checkout-btn:hover{
+  background: #ffb6d9; /* hover effect */
+}

@@ -1,0 +1,132 @@
+.titel {   /* header */
+  background-color: #ffb6d9; 
+  padding: 20px; /* ruimte binnen de header */
+  text-align: center; 
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+
+* {
+  margin: 0; /* verwijdert standaard buitenruimte van alle elementen */
+  padding: 0; /* verwijdert standaard binnenruimte */
+  box-sizing: border-box; /* zorgt dat padding binnen de breedte valt */
+}
+
+body {
+  background-color: #fff; /* achtergrondkleur wit */
+  color: #fff; /* standaard tekstkleur wit */
+  font-family: Georgia, Italic; /* lettertype */
+  line-height: 1.6; /* ruimte tussen regels */
+}
+
+header {
+  display: flex; /* elementen naast elkaar */
+  justify-content: space-between; /*  ruimte tussen links en rechts */
+  align-items: center; /* verticaal centreren */
+  background-color: #ffb6d9;
+  color: white;
+  padding: 1rem 2rem; /* ruimte in header */
+  flex-wrap: wrap; /* gsm -> ietms onder elkaar */
+}
+
+.logo {
+  display: flex; /* logo + tekst naast elkaar */
+  align-items: center; /* verticaal uitlijnen */
+  gap: 10px; /* ruimte tussen logo + tekst */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul li a img {
+  width: 24px;       /* breedte van icoon */
+  height: 24px; /* hoogte van icoon */
+  object-fit: contain; /* voorkomt vervorming */
+  display: block;
+}
+
+/* Zorg dat alles netjes op één lijn staat */
+nav ul li {
+  display: flex; /* zet items naast elkaar */
+  align-items: center; /* centreren */
+}
+
+nav ul {
+  list-style: none; /* verwijdert bolletjes van lijst */
+  display: flex;
+  gap: 1.5rem; /* ruimte tussen menu items */
+}
+
+nav a {
+  text-decoration: none; /* geen onderlijning */
+  color: white;
+  font-weight: 500;
+}
+
+----
+
+.info-container {
+  max-width: 900px; /* maximale breedte van de inhoud */
+  margin: 50px auto; /* centreren + ruimte boven/onder */
+  padding: 20px;
+}
+
+.pagina-titel {
+  text-align: center;
+  color: #ffb6d9;
+  font-family: Georgia, Italic;
+  font-size: 2.2rem;
+  margin-bottom: 40px; /* ruimte onder titel */
+}
+
+.info-card {
+  display: flex; /* zet inhoud naast elkaar */
+  align-items: center; /* verticaal centreren */
+  gap: 20px; /* ruimte tussen icoon en tekst */
+  background-color: #ffe4f2;
+  border-radius: 15px;
+  padding: 25px; /* ruimte binnen kaart */
+  margin-bottom: 25px; /* ruimte tussen kaarten */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08); /* schaduw effect */
+}
+
+.info-icon {
+  font-size: 40px; /* grootte van icoon */
+}
+
+.info-card h2 {
+  color: #ffb6d9;
+  font-family: Georgia, Italic;
+  margin-bottom: 5px; /* kleine ruimte onder titel */
+}
+
+.info-card p,
+.info-card a {
+  color: #ffb6d9;
+  font-family: Georgia, Italic;
+  font-size: 1.1rem;
+  text-decoration: none; /* geen onderlijning */
+}
+
+.locatie {
+  display: flex;
+  justify-content: center;   /* horizontaal centreren */
+  align-items: center;       /* verticaal centreren */
+  margin: 60px auto; /* ruimte boven/onder + centreren */
+}
+
+.locatie img {
+  max-width: 100%; /* afbeelding wordt nooit breder dan container */
+  border-radius: 10px;
+}
+
+.back-to-top {
+  display: block; /* maakt het een blok element */
+  text-align: center;
+  margin-top: 40px;
+  color: #ff7fbf;
+  font-family: Georgia, Italic;
+  font-weight: bold;
+  text-decoration: none; /* geen onderlijning */
+}

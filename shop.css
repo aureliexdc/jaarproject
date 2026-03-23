@@ -1,0 +1,140 @@
+.titel {   /* header */
+    background-color: #ffb6d9;
+    padding: 20px; /* Ruimte binnenin de header */
+    text-align: center; /* Tekst in het midden */
+    font-size: 2rem; /* Grote tekst */
+    font-weight: bold; 
+    color: #ffffff; 
+  }
+
+  * {
+    margin: 0; /* verwijdert standaard marges */
+    padding: 0; /* verwijdert standaard padding */
+    box-sizing: border-box; /* padding ->valt binnen breedte */
+  }
+  
+  body {
+    background-color: white;          /* achtergrond kleur*/
+    color: #ffb6d9;
+    font-family: Georgia, Italic;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex; /* zet elementen naast elkaar */
+    justify-content: space-between; /* verdeelt ruimte links/rechts */
+    align-items: center; /* verticaal centreren */
+    background-color: #ffb6d9; /* kleur header */
+    color: white;
+    padding: 1rem 2rem; /* ruimte binnen header */
+    flex-wrap: wrap; /* gsm -> elementen onder elkaar*/
+  }
+  
+
+  .logo {
+    display: flex; /* zet logo + tekst naast elkaar */
+    align-items: center; /* verticaal uitlijnen */
+    gap: 10px; /* ruimte tussen logo en tekst */
+    font-size: 1.5rem; /* grotere tekst */
+    font-weight: bold;
+  }
+
+  nav ul li a img {
+    width: 24px; /* breedte van icoon */
+    height: 24px; /* hoogte van icoon */
+    object-fit: contain; /* voorkomt vervorming */
+    display: block; /* zorgt voor nette uitlijning */
+  }
+  
+  /* Zorg dat alles netjes op één lijn staat */
+  nav ul li {
+    display: flex; /* zet items naast elkaar */
+    align-items: center; /* centreren */
+  }
+
+  nav ul {            /* nav knoppen naast elkaar */
+    list-style: none; /* verwijdert bolletjes */
+    display: flex; /* zet menu naast elkaar */
+    gap: 1.5rem; /* ruimte tussen knoppen */
+    flex-wrap: wrap;
+  }
+  
+  nav a {               /* nav knoppen wit maken */
+    text-decoration: none; /* geen onderlijning */
+    color: white; 
+    font-weight: 500; /* half vet */
+  }
+
+  ----
+  table, th, td {
+    border: 1px solid white; /* witte rand rond tabel + cellen */
+    border-collapse: collapse; /* randen samenvoegen */
+    }
+
+    th, td {
+    background-color: white; 
+    color: #ffb6d9; 
+    font-family: Georgia, Italic;
+    }
+
+  /* zet tabel in het midden (opmaak) */
+  table {
+    width: 95%; /* bijna volledige breedte */
+    margin: 2rem auto; /* centreren + ruimte boven/onder */
+    border-collapse: separate; /* randen apart */
+    border-spacing: 0 1rem; /* ruimte tussen rijen */
+  }
+
+/* bovenkant tabel roze maken*/
+th {
+  background-color: #ffb6d9;
+  color: white;
+  padding: 1rem; /* ruimte binnen cellen */
+  text-align: left; /* tekst links uitlijnen */
+  font-size: 1rem;
+}
+
+/* Tabelcellen */
+td {
+  padding: 1rem; /* ruimte binnen cel */
+  vertical-align: top; /* tekst boven uitlijnen */
+  background-color: #fff;
+  border-radius: 8px; /* afgeronde hoeken */
+  font-size: 0.95rem; /* iets kleinere tekst */
+}
+
+/* Afbeeldingen resizen*/
+td img {
+  width: 120px; /* vaste breedte afbeelding */
+  border-radius: 10px;
+}
+
+/* prijs */
+td:nth-child(3) {
+  font-weight: bold;
+  color: #ffb6d9;
+  white-space: nowrap; /* voorkomt dat prijs afbreekt */
+}
+
+/* Description mooier (meer in een blok) */
+td:nth-child(4) {
+  color: #ffb6d9; /* tekstkleur */
+  line-height: 1.7; /* meer ruimte tussen regels */
+  max-width: 400px; /* maximale breedte */
+}
+
+/* word licht roze als je over product gaat */
+tr:hover td {
+  background-color: #fff6fb; /* lichtroze bij hover */
+}
+
+
+.back-to-top {
+  display: block; /* maakt het een blok */
+  text-align: center; /* tekst centreren */
+  margin-top: 40px; /* ruimte boven */
+  color: #ff7fbf; 
+  font-family: Georgia, Italic; 
+  font-weight: bold;
+  text-decoration: none; /* geen onderlijning */
+}

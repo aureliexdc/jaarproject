@@ -1,0 +1,127 @@
+.titel {   /* header */
+    background-color: #ffb6d9;
+    padding: 20px; /* Ruimte binnenin de header */
+    text-align: center; /* Tekst in het midden */
+    font-size: 2rem; /* Grote tekst */
+    font-weight: bold; 
+    color: #ffffff; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;          /* achtergrond kleur*/
+    font-family: Georgia, Italic;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;                 /* kleur tekst in header */
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+nav ul li a img {
+  width: 24px;       /* pas aan naar smaak (20–28px werkt goed) */
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Zorg dat alles netjes op één lijn staat */
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+  
+.container {
+    display: flex; /* Zet elementen naast elkaar */
+    flex-direction: row; /* Links en rechts naast elkaar */
+    align-items: flex-start; /* Bovenkanten gelijk */
+    padding: 20px; /* Ruimte rond het geheel */
+  }
+  
+.image-section {  /*afbeelding in midden scherm*/
+    flex: 1; /* neemt 50% van de breedte */
+  }
+  
+.image-section img {
+    max-width: 100%; /* afbeelding wordt nooit te breed */
+    border-radius: 10px; /* zachte afgeronde hoeken */
+  }
+  
+.info-section {   /* tekst in midden scherm */
+    flex: 1; /* ook 50% van de breedte (andere helf van afbeelding) */
+    background-color: #ffe4f2;
+    color: #ffb6d9;
+    font-family: Georgia, Italic;
+    padding: 10px; /* ruimte binnen het tekstvak */
+    border-radius: 10px; /* afgeronde hoeken */
+    margin-left: 20px; /* ruimte tussen tekstvak en foto */
+    display: flex;         /* flex container */
+    flex-direction: column; /* elementen onder elkaar */
+  }
+ 
+
+
+  
+
+ /* buttons (beide) */
+
+ .buttons {
+  display: flex;            /* zet ze naast elkaar */
+  gap: 12px;                /* ruimte tussen de knoppen */
+  margin-top: 65px;         /* ruitme onder de tekst + knoppen */
+}
+
+.btn-shop {
+    background-color: #ffb6d9;      /* kleur header */
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;    /* omhulsel */
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+
+
+  /* hover effect */
+.btn:hover {
+    background-color: white;
+    color: #ffb6d9;
+  }
+
+a:hover {
+  text-decoration: underline;
+  }
